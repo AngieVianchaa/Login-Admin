@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu archivo de estilos personalizado -->
+  <link href="Style/style.css" rel="stylesheet">
+  <script src="Controllers/firebase.js" type="module"></script>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="card p-4">
+    <h1 class="text-center mb-4">Inicio Sesión</h1>
+    <form id="loginForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary d-block w-100 mb-3" id="loginbtn">Iniciar Sesión</button>
+    </form>
+    
+    <div class="text-center">
+      <button id="facebookLoginBtn" class="btn btn-primary">
+        <img src="Resources/Img/facebook_logo.png" alt="Facebook Logo" class="logo me-2"> Iniciar sesión con Facebook
+      </button>
+    </div>
+
+    <div class="text-center mt-3">
+      <button id="googleLoginBtn" class="btn btn-danger">
+        <img src="Resources/Img/google_logo.png" alt="Google Logo" class="logo me-2"> Iniciar sesión con Google
+      </button>
+    </div>
+    <div class="text-center mt-3">
+      <a href="Templates/register.html">¿No tienes una cuenta? Regístrate aquí</a>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (required for Bootstrap components to work) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Tu script personalizado -->
+<script src="Controllers/script.js"></script>
+
+</body>
+</html>
+

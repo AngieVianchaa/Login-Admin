@@ -1,0 +1,84 @@
+/* Personaliza el estilo según tus preferencias */
+body {
+  background-color: #f8f9fa;
+  background-image: url('../Resources/Img/fondo_login2.jpeg'); /* Ruta relativa a la imagen en tu proyecto */
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+  background-position: center; /* Centra la imagen dentro de la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  margin: 0; /* Elimina los márgenes por defecto del body */
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.logo {
+  max-width: 30px; /* Ajusta este valor según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos específicos para el panel de administración */
+.admin-panel .navbar-brand,
+.admin-panel .nav-link,
+.admin-panel h1,
+.admin-panel h2,
+.admin-panel h3,
+.admin-panel h4,
+.admin-panel h5,
+.admin-panel h6,
+.admin-panel p {
+  color: white !important; /* Asegúrate de que todo el texto en el panel de administración sea blanco */
+}
+
+.admin-panel {
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+  background-position: center; /* Centra la imagen dentro de la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+/* Estilos específicos para el panel de usuario */
+.user-panel {
+  background-color: #f8f9fa;
+  background-image: url('../Resources/Img/fondo_login2.jpeg'); /* Ruta relativa a la imagen en tu proyecto */
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+  background-position: center; /* Centra la imagen dentro de la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  margin: 0; /* Elimina los márgenes por defecto del body */
+}
+
+.user-panel .navbar-brand,
+.user-panel .nav-link,
+.user-panel h1,
+.user-panel h2,
+.user-panel h3,
+.user-panel h4,
+.user-panel h5,
+.user-panel h6,
+.user-panel p {
+  color: white !important; /* Asegúrate de que todo el texto en el panel de usuario sea blanco */
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.logo {
+  max-width: 30px; /* Ajusta este valor según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+

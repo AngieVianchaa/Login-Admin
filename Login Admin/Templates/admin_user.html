@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Nuevo Usuario</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu archivo de estilos personalizado -->
+  <link href="../Style/style.css" rel="stylesheet">
+</head>
+<body class="panel-bg"> <!-- Aplica el estilo de fondo aquí -->
+
+<div class="container">
+  <h1 class="mt-4">Crear Nuevo Usuario</h1>
+
+  <form id="createUserForm">
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo Electrónico</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" required minlength="8">
+    </div>
+    <div class="mb-3">
+      <label for="cedula" class="form-label">Número de Cédula</label>
+      <input type="text" class="form-control" id="cedula" required>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Número de Teléfono</label>
+      <input type="text" class="form-control" id="phone" required>
+    </div>
+    <div class="mb-3">
+      <label for="birthdate" class="form-label">Fecha de Nacimiento</label>
+      <input type="date" class="form-control" id="birthdate" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Crear Usuario</button>
+  </form>
+</div>
+
+<!-- Bootstrap JS (required for Bootstrap components to work) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Firebase y script personalizado -->
+<script src="../Controllers/firebase.js" type="module"></script>
+<script src="../Controllers/admin_user.js" type="module"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu archivo de estilos personalizado -->
+  <link href="../Style/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="card p-4">
+    <h1 class="text-center mb-4">Registro de Usuario</h1>
+    <form id="registerForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="confirmEmail" class="form-label">Confirmar Correo Electrónico</label>
+        <input type="email" class="form-control" id="confirmEmail" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" required minlength="8">
+      </div>
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+        <input type="password" class="form-control" id="confirmPassword" required minlength="8">
+      </div>
+      <div class="mb-3">
+        <label for="cedula" class="form-label">Número de Cédula</label>
+        <input type="text" class="form-control" id="cedula" required>
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Número de Teléfono</label>
+        <input type="text" class="form-control" id="telefono" required>
+      </div>
+      <div class="mb-3">
+        <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" id="fechaNacimiento" required>
+      </div>
+      <button type="submit" class="btn btn-primary d-block w-100 mb-3">Registrarse</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS (required for Bootstrap components to work) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Tu script personalizado -->
+<script src="../Controllers/register.js"></script>
+
+</body>
+</html>
